@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ssh-tunnel:
+    build:
+      context: ./
+      args:
+        PYTHON_VER: 3.6
+    volumes:
+            - ./src:/src
+            - ./config.json:/config.json
+            - ./key:/key
+    command: ping 172.0.0.1

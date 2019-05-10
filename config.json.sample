@@ -1,0 +1,18 @@
+{
+  "LOGIN_CHECK_SETTINGS":{
+      "LOGIN_CHECK": false,
+      "LOGIN_CHECK_INTERVAL": "10"
+  },
+  "SSH_SETTINGS":{
+      "REMOTE_SERVER": "11.22.33.44",
+      "REMOTE_PORT": "22",
+      "SSH_USERNAME": "root",
+      "SSH_PASSWORD": "",
+      "SSH_KEY_FILENAME": "remote_server.pem",
+    
+      "TUNNEL_SERVER_PORT": "8888",
+      "TUNNEL_REMOTE_HOST": "192.168.0.100",
+      "TUNNEL_REMOTE_PORT": "80",
+      "SSH_TIMEOUT": "5",
+  }
+}
