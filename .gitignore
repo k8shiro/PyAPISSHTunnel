@@ -1,3 +1,6 @@
 config.json
+nginx-proxy.conf
 key/*
 !.gitkeep
+
+__pycache__/

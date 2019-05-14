@@ -5,8 +5,20 @@ services:
       context: ./
       args:
         PYTHON_VER: 3.6
+        proxy: ${http_proxy}
     volumes:
             - ./src:/src
-            - ./config.json:/config.json
+            - ./config:/config
             - ./key:/key
-    command: ping 172.0.0.1
+  nginx-proxy:
+    image: nginx
+    volumes:
+      - ./config/nginx-proxy.conf:/etc/nginx/conf.d/default.conf
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.211.0.0/16
+

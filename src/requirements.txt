@@ -1,2 +1,2 @@
 paramiko
-#sshtunnel
+PySocks
