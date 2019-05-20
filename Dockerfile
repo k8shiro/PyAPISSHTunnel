@@ -18,4 +18,4 @@ RUN pip install -r requirements.txt
 
 RUN apk add --update --no-cache netcat-openbsd openssh-client
 
-CMD python ssh_tunnel.py
+CMD python -u ssh_tunnel.py

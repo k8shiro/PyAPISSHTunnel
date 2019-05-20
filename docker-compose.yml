@@ -10,6 +10,7 @@ services:
             - ./src:/src
             - ./config:/config
             - ./key:/key
+    restart: always
   nginx-proxy:
     image: nginx
     volumes:

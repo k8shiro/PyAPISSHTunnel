@@ -149,7 +149,7 @@ def run_forwading():
             exists_user = login_user_check()
             print("Check")
             if not exists_user:
-              print("USER NOT LOGIN, SLEEP 10s")
+              print("USER NOT LOGIN, SLEEP {}".format(LOGIN_CHECK_INTERVAL))
               time.sleep(LOGIN_CHECK_INTERVAL)
               continue
     
